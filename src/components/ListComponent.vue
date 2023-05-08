@@ -1,5 +1,6 @@
 <template>
-  <div class="container mt-2">
+  <div class="container p-3 my-3 bg-primary text-black" style="max-width: 320px; border-radius: 7px;">
+    <h3>Lista de tarefas</h3>
     <div v-for="(task, index) in tasks" :key="index">
       <b-card :title="task.subject" class="mb-2">
         <b-card-text>{{ task.description }}</b-card-text>
